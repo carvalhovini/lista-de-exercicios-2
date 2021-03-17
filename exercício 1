@@ -1,0 +1,23 @@
+//Construa um algoritmo que a partir da leitura da velocidade e placa do carro, avise a 
+motorista somente se ele será multado, quando estiver trafegando no Eixo Rodoviário (limite
+de 80 km/h). //
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "");
+	
+	float km, placa;
+	printf("Olá, vamos ver se seu veiculo foi multado.");
+	printf("\nprimeiro, digite a velocidade que passou no radar: ");
+	scanf("%f", &km);
+	printf("\nagora digte a placa do veiculo: ");
+	scanf("%f", &placa);
+	if(km >= 80){
+		printf("seu veiculo foi multado no valor de 1200R$");
+	}else{
+		printf("seu veiculo não foi multado, muito bem");
+	}
+
+}
