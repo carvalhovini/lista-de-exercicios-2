@@ -1,0 +1,27 @@
+//Dado três valores, verificar se eles podem constituir os lados de um triângulo (triângulo é uma
+//figura geométrica onde cada lado é menor do que a soma dos outros dois lados).
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	double A, B, C, Soma1, Soma2, Soma3;
+	printf("para formar um triangulo cada lado tem que \nser menor que a soma dos outros dois lados");
+	printf("\nentao vamos la, qual o valor do lado A: ");
+	scanf("%f", &A);
+	printf("\nagora digite o valor do lado B: ");
+	scanf("%f", &B);
+	printf("\ndigite o valor do lado C: ");
+	scanf("%f", &C);
+	
+	Soma1 = B + C;
+	Soma2 = A + C;
+	Soma3 = A + B;
+	
+	if( (A <= Soma1) && (B <= Soma2) && (C <= Soma3) ){
+	  printf("com esses dados da pra fazer um triangulo");
+    }else{
+    	printf("não tem como formar um triangulo com essas medidas");
+}}
