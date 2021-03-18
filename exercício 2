@@ -1,20 +1,17 @@
-/Efetuar a leitura de um número e apresentá-lo como o seu módulo (somente seu valor
-//absoluto) elaborando os cálculos matemáticos para isso.
-
-
+// Efetuar a leitura de um número e apresentá-lo como o seu módulo (somente seu valor
+// absoluto) elaborando os cálculos matemáticos para isso.
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
-
-int main(){
+int main (){
 	int num;
-	printf("primeiro pra saber o modulo do numero\npreciso que digite ele aqui: ");	
+	printf("primeiro pra saber o modulo do numero \npreciso que digite ele aqui:");	
 	scanf("%d", &num);
-	if(num > 0){
-		(num = num*-1);
-	}
+	if (num>=0){
+	(num = num * -1);
 	printf("o modulo e: %d", num);
-
+	}
+	printf("\n%d = %d * -1", num, num);
 	return (0);
 }
