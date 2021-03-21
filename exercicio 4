@@ -1,0 +1,27 @@
+//Desenvolver um algoritmo que leia o nome e o sexo de uma pessoa e apresente como saída
+//uma das seguintes mensagens: “Ilmo. Sr.”, para o sexo masculino ou “Ilma. Sra.” para o sexo
+//feminino, acrescentando o nome em seguida. Observe o exemplo de um resultado:
+//Ilma Sra. Ana Rita
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	char A[60], A1[60];
+	int B;
+	printf("digite seu primeiro nome: \n");
+	scanf("%s", &A);
+	printf("digite seu sobrenome: \n");
+	scanf("%s", &A1);
+	printf("digite o sexo (2)masculino ou (1)feminino\n");
+	scanf("%d", &B);
+	if(B % 2 == 0)
+	{
+		printf("Ilmo. Sr %s %s", A, A1);
+	}
+	else
+	{
+		printf("Ilma. Sra %s %s", A, A1);
+	}
+}
