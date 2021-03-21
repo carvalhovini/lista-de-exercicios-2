@@ -1,0 +1,27 @@
+//Ler dois valores numéricos e apresentar a diferença do maior valor pelo
+// menor dois valores numéricos e apresentar a diferença do maior valor pelo menor
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	int n1, n2, r1, r2;
+	printf("digite o valor 1: ");
+	scanf("%d", &n1);
+	printf("digite o valor 2: ");
+	scanf("%d", &n2);
+	
+	r1 = n1 - n2;
+	r2 = n2 - n1;
+	
+    if(n1 > n2){
+			printf("o valor %d e maior que %d\n", n1, n2);
+			printf("\n%d - %d = %d", n1, n2, r1);
+		}
+		else
+		{
+			printf("o valor %d e maior que %d", n2, n1);
+			printf("\n%d - %d = %d", n2, n1, r2);
+		}
+}
